@@ -1,0 +1,172 @@
+/* CSS初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    color: #333;
+}
+ul {
+    list-style: none;
+}
+input,button {
+    border: 0;
+    outline: 0;
+}
+button {
+    cursor: pointer;
+}
+b {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* 版心 */
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+.container:before {    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover;
+    z-index: -999;
+}
+.container:after {
+    width: 95%;
+    height: 95%;
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    z-index: -1;
+}
+
+button#back,
+button#home {
+    width: 60px;
+    height: 60px;
+    background: url(../images/button/normal/left.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 60px;
+    top: 40px;
+}
+button#back:hover {
+    background: url(../images/button/hover/left.png) no-repeat;
+    background-size: cover;
+}
+button#back:active {
+    background: url(../images/button/click/left.png) no-repeat;
+    background-size: cover;
+}
+button#home {
+    background: url(../images/button/normal/home.png) no-repeat;
+    background-size: cover;
+    left: 130px;
+}
+button#home:hover {
+    background: url(../images/button/hover/home.png) no-repeat;
+    background-size: cover;
+}
+button#home:active {
+    background: url(../images/button/click/home.png) no-repeat;
+    background-size: cover;
+}
+
+a#user {
+    width: 60px;
+    height: 60px;
+    background: url(../images/button/normal/profile.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    margin: 0;
+}
+a#user:hover {
+    background: url(../images/button/hover/profile.png) no-repeat;
+    background-size: cover;
+}
+a#user:active {
+    background: url(../images/button/click/profile.png) no-repeat;
+    background-size: cover;
+}
+
+.container-bd {
+    width: 55%;
+    height: 70%;
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h2 {
+    margin: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+ul {
+    width: 200px;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(10,20px);
+    grid-gap: 10px;
+    position: absolute;
+    left: 120px;
+    top: 80px;
+}
+ul.second {
+    left: 340px;
+}
+button#next {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 15px;
+    background: #91a7bc;
+
+}
+button#next {
+    width: 100px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: url(../images/button/normal/small.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+button#next:hover {
+    background: url(../images/button/hover/small.png) no-repeat;
+    background-size: cover;
+}
+button#next:active {
+    background: url(../images/button/click/small.png) no-repeat;
+    background-size: cover;
+}

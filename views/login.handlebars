@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 返回 -->
+        <form method="get" action="/">
+        <button id="back"></button>
+        </form>
+
+        <!-- 登录界面 -->
+        <fieldset>
+            <legend>登录</legend>
+
+            <form action="/login" method="post">
+                <ul>
+                    <li><input type="text" name="username" placeholder="昵称" required></li>
+                    <li><input type="password" name="password" placeholder="密码" required></li>
+                    <li>
+                        <button id="register" formaction="/register">注册</button>
+                        <button id="login">登录</button>
+                    </li>
+                </ul>
+            </form>
+        </fieldset>
+    </div>
+</body>

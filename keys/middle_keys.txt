@@ -1,0 +1,13 @@
+1.comics 漫画书
+2.trap 使陷入困境
+3.moron 笨蛋
+4.chum 朋友
+5.alarm 警报器
+6.bulb 灯泡
+7.ultimate 最先进的事物
+8.grime 污垢
+9.recipe 秘方
+10.curse 诅咒
+11.make up for 补偿
+12.owe 亏欠
+13.fine 罚款

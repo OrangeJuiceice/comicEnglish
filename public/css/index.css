@@ -1,0 +1,44 @@
+/* CSS初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+
+/* 版心 */
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../images/bg1.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    background: url(../images/button/normal/play.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 330px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+button:hover {
+    background: url(../images/button/hover/play.png) no-repeat;
+    background-size: cover;
+}
+button:active {
+    background: url(../images/button/click/play.png) no-repeat;
+    background-size: cover;
+}

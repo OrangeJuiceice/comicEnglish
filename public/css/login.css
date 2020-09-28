@@ -1,0 +1,111 @@
+/* CSS初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+input,button {
+    border: 0;
+    outline: 0;
+}
+button {
+    cursor: pointer;
+}
+
+/* 版心 */
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    /* background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover; */
+    position: relative;
+    overflow: hidden;
+}
+.container:after {    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover;
+    z-index: -999;
+}
+button#back {
+    width: 60px;
+    height: 60px;
+    background: url(../images/button/normal/left.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+button#back:hover {
+    background: url(../images/button/hover/left.png) no-repeat;
+    background-size: cover;
+}
+button#back:active {
+    background: url(../images/button/click/left.png) no-repeat;
+    background-size: cover;
+}
+
+fieldset {
+    width: 300px;
+    height: 185px;
+    border: 5px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+legend {
+    margin-left: 40px;
+    font-size: 20px;
+}
+input {
+    width: 260px;
+    height: 40px;
+    margin: 15px 0 0 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+input[type=password] {
+    margin-top: 10px;
+}
+button#register,
+button#login {
+    display: block;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 15px;
+    background: #fff;
+    transition: 0.5s;
+    color: rgb(145, 167, 164);
+}
+button#register {
+    left: 20px;
+}
+button#login {
+    right: 20px;
+}
+button#register:hover,
+button#login:hover {
+    color: #fff;
+    background: rgb(145, 167, 164);
+    border: 2px solid #fff;
+}
+

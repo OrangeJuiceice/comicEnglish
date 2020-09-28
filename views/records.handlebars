@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="../css/records.css">
+</head>
+
+<div class="container">
+    <!-- 返回 -->
+        
+        <button id="back" onclick= "back()" ></button>
+        
+
+    <h2>{{username}}的学习点滴</h2>
+    
+    <div class="records">
+        <ul>
+            {{#each rows}}
+            <li>{{this.content}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<script>
+    function back(){
+        window.history.back();
+    }
+</script>

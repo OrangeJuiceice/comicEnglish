@@ -1,0 +1,39 @@
+<head>
+    <link rel="stylesheet" href="../css/level.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <!-- 返回 -->
+        <form method="get">
+        <button id="back" formaction="/"></button>
+        </form>
+
+        <!--用户 -->
+            <a href="/record"id="user"></a>
+
+        <!-- 难度选择 -->
+            <h1>关卡</h1>
+            <form action="/easy" method="get">
+                <button id="easy">初级</button>
+            </form>
+            <form action="/medium" method="get">
+                <button id="medium">中级</button>
+            </form>
+            <form action="/hard" method="get">
+                <button id="hard">高级</button>
+            </form>
+            
+            
+    </div>
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            var easy_button = document.querySelector("#easy")
+            easy_button.onclick = function(){
+                $.get("/easy",{},function(data){
+                    document.innerHTML = data
+                })
+            }
+        </script>
+</body>

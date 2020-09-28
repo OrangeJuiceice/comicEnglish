@@ -1,0 +1,167 @@
+..
+/* CSS初始化 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input, button {
+    border: 0;
+    outline: 0;
+}
+
+/* 版心 */
+
+.container {
+    width: 60%;
+    height: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button#back, button#home {
+    width: 60px;
+    height: 60px;
+    background: url(../images/button/normal/left.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -220px;
+    top: 25px;
+    margin: 0;
+}
+
+button#back:hover {
+    background: url(../images/button/hover/left.png) no-repeat;
+    background-size: cover;
+}
+
+button#back:active {
+    background: url(../images/button/click/left.png) no-repeat;
+    background-size: cover;
+}
+
+button#home {
+    background: url(../images/button/normal/home.png) no-repeat;
+    background-size: cover;
+    left: -150px;
+}
+
+button#home:hover {
+    background: url(../images/button/hover/home.png) no-repeat;
+    background-size: cover;
+}
+
+button#home:active {
+    background: url(../images/button/click/home.png) no-repeat;
+    background-size: cover;
+}
+
+a#user {
+    width: 60px;
+    height: 60px;
+    background: url(../images/button/normal/profile.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -230px;
+    top: 25px;
+    margin: 0;
+}
+a#user:hover {
+    background: url(../images/button/hover/profile.png) no-repeat;
+    background-size: cover;
+}
+a#user:active {
+    background: url(../images/button/click/profile.png) no-repeat;
+    background-size: cover;
+}
+
+.carousel-control {
+    width: 10%;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(138, 190, 197);
+    box-shadow: 0 2px 8px rgb(95, 140, 146);
+}
+
+.carousel-control:hover {
+    opacity: 0.8;
+}
+
+.left.carousel-control {
+    background-image: none;
+    left: -10%;
+}
+
+.right.carousel-control {
+    background-image: none;
+    right: -10%;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+
+.footer-bd {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 80px;
+}
+
+.footer-bd input.form-control {
+    vertical-align: middle;
+    display: inline-block;
+    width: 150px;
+    margin-left: 210px;
+    border: 2px solid rgb(138, 190, 197);
+}
+
+footer button.btn {
+    font-size: 14px;
+    border: 2px solid rgb(138, 190, 197);
+    color: rgb(138, 190, 197);
+    transition: all 0.5s;
+}
+
+footer button.btn:hover {
+    color: #fff;
+    background: rgb(138, 190, 197);
+    border: 2px solid rgb(138, 190, 197);
+}
+
+.pd {
+    width: 40px;
+    position: relative;
+    right: 0;
+    display: none;
+}

@@ -1,0 +1,111 @@
+/* CSS初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+input,button {
+    border: 0;
+    outline: 0;
+}
+button {
+    cursor: pointer;
+}
+
+/* 版心 */
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+.container:before {    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover;
+    z-index: -999;
+}
+
+button#back {
+    width: 60px;
+    height: 60px;
+    background: url(../images/button/normal/left.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    margin: 0;
+}
+button#back:hover {
+    background: url(../images/button/hover/left.png) no-repeat;
+    background-size: cover;
+}
+button#back:active {
+    background: url(../images/button/click/left.png) no-repeat;
+    background-size: cover;
+}
+
+a#user {
+    width: 60px;
+    height: 60px;
+    background: url(../images/button/normal/profile.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    margin: 0;
+}
+a#user:hover {
+    background: url(../images/button/hover/profile.png) no-repeat;
+    background-size: cover;
+}
+a#user:active {
+    background: url(../images/button/click/profile.png) no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    padding-top: 170px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+button {
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    margin: 20px auto;
+    background: url(../images/button/normal/medium.png) no-repeat;
+    background-size: cover;
+}
+button#easy {
+    margin-top: 40px;
+}
+button:hover {
+    background: url(../images/button/hover/medium.png) no-repeat;
+    background-size: cover;
+}
+button:active {
+    background: url(../images/button/click/medium.png) no-repeat;
+    background-size: cover;
+}
